@@ -9,7 +9,6 @@ import Cart from "../../Pages/Cart/Cart.component";
 const Header = () => {
   const [showCart, setShowCart] = React.useState(false);
   const onClickHandler = () => {
-    console.log(" I am onclcik handler called");
     setShowCart(!showCart);
   };
   return (
@@ -34,7 +33,7 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button> */}
             <div className="collapse navbar-collapse" id="navbarCollapse">
-              <div className="navbar-nav">
+              <div className="navbar-nav" data-testid="navbar">
                 <Link to="/" className="nav-item nav-link active">
                   Home
                 </Link>
